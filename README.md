@@ -1,5 +1,6 @@
 # azure-iot-edge-get-started
 Initial guide to start simple test application on Hivecell One, connected with Azure IoT Edge
+
 ---
 platform: {enter the OS name running on edge device}
 device: {enter your device name here}
@@ -83,20 +84,20 @@ Open the command prompt on your IoT Edge device , confirm that the Azure IoT edg
 
     systemctl status iotedge
 
- ![](./images/Capture.png)
+ ![](./images/Capture.PNG)
 
 Open the command prompt on your IoT Edge device, confirm that the module deployed from the cloud is running on your IoT Edge device
 
     sudo iotedge list
 
- ![](./images/iotedgedaemon.png) 
+ ![](./images/iotedgedaemon.PNG) 
 
 On the device details page of the Azure, you should see the runtime modules - edgeAgent, edgeHub and tempSensor modueles are under running status
 
- ![](./images/tempSensor.png)
+ ![](./images/tempSensor.PNG)
 
 <a name="Step-3-2-DeviceManagement"></a>
-## 3.2 Device Management (Optional)
+## 3.2 Device Management (Mandatory)
 
 **Pre-requisites:** Device Connectivity.
 
@@ -118,7 +119,7 @@ To run the back-end application, open another shell or command prompt window. Th
 
 IoT device client will get the message and report the status to the device twin.
 
- ![](./images/devicetwin.png)
+ ![](./images/devicetwin.PNG)
 
 **Update firmware**
 
@@ -127,7 +128,7 @@ Confirm the IoT hub, Device ID, method name and method payload as below:
 -   Press “call Method” button
 -   Check the returning status as below:
 
- ![](./images/firmware.png)
+ ![](./images/firmware.PNG)
 
 
 ## 3.2.2 Reboot (Using Microsoft SDK Samples):
@@ -139,13 +140,13 @@ Confirm the IoT hub, Device ID, method name as below:
 -   Press “call Method” button
 -   Check the returning status as below:
 
- ![](./images/reboot.png)
+ ![](./images/reboot.PNG)
 
 
 IoT device client will get the message and report the status to the device twin.
 
- ![](./images/devicetwinmessage.png)
-  
+ ![](./images/devicetwinmessage.PNG)
+
 ## 3.3.3 Firmware Update (Modified SDK samples/Custom made application):
 
 If the Client components are custom made please add the steps to execute the Firmware Update through Device Twin.
@@ -167,7 +168,7 @@ Once you shared the documents with us, we will contact you in the following 48 t
 # Step 5: Troubleshooting
 
 Please contact engineering support on **<mailto:iotcert@microsoft.com>** for help with troubleshooting.
-  
+
 [setup-devbox-linux]: https://github.com/Azure/azure-iot-sdk-c/blob/master/doc/devbox_setup.md
 [lnk-setup-iot-hub]: ../setup_iothub.md
 [lnk-manage-iot-hub]: ../manage_iot_hub.md
