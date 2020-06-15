@@ -2,14 +2,12 @@
 Initial guide to start simple test application on Hivecell One, connected with Azure IoT Edge
 
 ---
-platform: {enter the OS name running on edge device}
-device: {enter your device name here}
-language: {enter the language used to you edge device}
+platform: Ubuntu 18.04
+device: Hivecell One
+language: Java 
 ---
 
-*We highly recommend keeping this document current, and Microsoft reserves a right to remove devices and documents from the Azure IoT Device Catalog if document contains broken URL links, incorrect information etc.*
-
-Run a simple {enter the language used to you edge device} sample on {enter your device name here} device running {enter the OS name running on edge device. Specify distribution or Windows SKU information. Ex: Ubuntu Sever 16.04, Windows 10 IoT Core. Only [Tier 1 OS](https://docs.microsoft.com/en-us/azure/iot-edge/support) is allowed}
+Run a simple Java sample on Hivecell One device running Ubuntu 18.04.
 ===
 ---
 
