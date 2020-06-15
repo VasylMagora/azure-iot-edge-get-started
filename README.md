@@ -3,8 +3,11 @@ Initial guide to start simple test application on Hivecell One, connected with A
 
 ---
 platform: Ubuntu 18.04
+
 device: Hivecell One
+
 language: Java 
+
 ---
 
 Run a simple Java sample on Hivecell One device running Ubuntu 18.04.
