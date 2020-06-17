@@ -23,23 +23,17 @@ Run a simple Java sample on Hivecell One device running Ubuntu 18.04.
 -   [Step 4: Next Steps](#NextSteps)
 -   [Step 5: Troubleshooting](#Step-5-Troubleshooting)
 
-# Instructions for using this template
-
--   Replace the text in {placeholders} with correct values.
--   Delete the lines {{enclosed}} after following the instructions enclosed between them.
--   It is advisable to use external links, wherever possible.
--   Remove this section from final document.
-
 <a name="Introduction"></a>
 # Introduction
 
 **About this document**
 
-This document describes how to connect {enter your device name here} device running {enter the OS name running on edge device} with Azure IoT Edge Runtime pre-installed and Device Management. This multi-step process includes:
+This document describes how to connect Hivecell One device running Ubuntu 18.04 with Azure IoT Edge Runtime and Device Management and run simple package from Azure Marketplace. This multi-step process includes:
 
 -   Configuring Azure IoT Hub
+-   Deploying Azure IoT Runtime on device
 -   Registering your IoT device
--   Build and Deploy client component to test device management capability 
+-   Deploing client component to test device management capability 
 
 <a name="Prerequisites"></a>
 # Step 1: Prerequisites
@@ -63,8 +57,6 @@ You should have the following items ready before beginning the process:
 <a name="Manual"></a>
 # Step 3: Manual Test for Azure IoT Edge on device
 
-This section walks you through the test to be performed on the Edge devices running the Linux operating system such that it can qualify for Azure IoT Edge certification.
-
 <a name="Step-3-1-IoTEdgeRunTime"></a>
 ## 3.1 Edge RuntimeEnabled (Mandatory)
 
@@ -75,23 +67,23 @@ The following components come pre-installed or at the point of distribution on t
 -   Azure IoT Edge Security Daemon
 -   Daemon configuration file
 -   Moby container management system
--   A version of `hsmlib` 
+-   Hivecell Platform agent
 
 *Edge Runtime Enabled:*
 
 **Check the iotedge daemon command:** 
 
-Open the command prompt on your IoT Edge device , confirm that the Azure IoT edge Daemon is under running state
+Open the command prompt on your Hivecell One device, confirm that the Azure IoT edge Daemon is under running state
 
     systemctl status iotedge
 
- ![](./images/Capture.PNG)
+ ![]()
 
 Open the command prompt on your IoT Edge device, confirm that the module deployed from the cloud is running on your IoT Edge device
 
     sudo iotedge list
 
- ![](./images/iotedgedaemon.PNG) 
+ ![]() 
 
 On the device details page of the Azure, you should see the runtime modules - edgeAgent, edgeHub and tempSensor modueles are under running status
 
