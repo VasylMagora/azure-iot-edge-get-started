@@ -20,8 +20,9 @@ Run a simple Java sample on Hivecell One device running Ubuntu 18.04.
 -   [Step 1: Prerequisites](#Prerequisites)
 -   [Step 2: Prepare your Device](#PrepareDevice)
 -   [Step 3: Manual Test for Azure IoT Edge on device](#Manual)
--   [Step 4: Next Steps](#NextSteps)
--   [Step 5: Troubleshooting](#Step-5-Troubleshooting)
+-   [Step 4: Connecting device with the cloud](#Connecting-to-cloud)
+-   [Step 5: Deploying pre-build module](#Step-5-Deployment)
+-   [Additional items](#Additional)
 
 <a name="Introduction"></a>
 # Introduction
@@ -45,7 +46,7 @@ You should have the following items ready before beginning the process:
 -   [Sign up to IOT Hub](https://account.windowsazure.com/signup?offer=ms-azr-0044p)
 -   [Add the Edge Device](https://docs.microsoft.com/en-us/azure/iot-edge/quickstart-linux)
 -   [Add the Edge Modules](https://docs.microsoft.com/en-us/azure/iot-edge/quickstart-linux#deploy-a-module)
--   {enter your device name here} device.
+-   [Internet connectivity via LAN (ethernet cable)]
 
 <a name="PrepareDevice"></a>
 # Step 2: Prepare your Device
@@ -80,88 +81,28 @@ Open the command prompt on your Hivecell One device, confirm that the Azure IoT 
     systemctl status iotedge
 
  
- ![]()
-
 Open the command prompt on your IoT Edge device, confirm that the module deployed from the cloud is running on your IoT Edge device
 
     sudo iotedge list
+ 
 
- ![]() 
+# Step 4: Connecting device with the cloud
 
-On the device details page of the Azure, you should see the runtime modules - edgeAgent, edgeHub and tempSensor modueles are under running status
+During Iot Device creation in Azure IoT Hub  you were provided with Primary connection string. Copy it to the clipboard and execute instruction, step "Configure the security daemon: Option 1: Manual Provisioning"
 
- ![](./images/tempSensor.PNG)
+https://docs.microsoft.com/en-us/azure/iot-edge/how-to-install-iot-edge-linux
 
-<a name="Step-3-2-DeviceManagement"></a>
-## 3.2 Device Management (Mandatory)
-
-**Pre-requisites:** Device Connectivity.
-
-**Description:** A device that can perform basic device management operations (Reboot and Firmware update) triggered by messages from IoT Hub.
-
-## 3.2.1 Firmware Update (Using Microsoft SDK Samples):
-
-Specify the path {{enter the path}} where the firmwareupdate client components are installed.
-
-To run the simulated device application, open a shell or command prompt window and navigate to the **iot-hub/Tutorials/FirmwareUpdate** folder in the Node.js project you downloaded. Then run the following commands:
-
-    npm install
-    node SimulatedDevice.js "{your device connection string}"
-
-To run the back-end application, open another shell or command prompt window. Then navigate to the **iot-hub/Tutorials/FirmwareUpdate** folder in the Node.js project you downloaded. Then run the following commands:
-
-    npm install
-    node ServiceClient.js "{your service connection string}"
-
-IoT device client will get the message and report the status to the device twin.
-
- ![](./images/devicetwin.PNG)
-
-**Update firmware**
-
-Confirm the IoT hub, Device ID, method name and method payload as below:
-
--   Press “call Method” button
--   Check the returning status as below:
-
- ![](./images/firmware.PNG)
+After instruction execution you should be able to see connected devices in your Azure Iot Hub. 
+Picture you see should be similar to:
 
 
-## 3.2.2 Reboot (Using Microsoft SDK Samples):
+# Step 5: Deploying pre-build module
 
-Specify the path {{enter the path}} where the components are installed 
+Using instruction below deploy pre-build module that simulates temperature sensor:
 
-Confirm the IoT hub, Device ID, method name as below:
-
--   Press “call Method” button
--   Check the returning status as below:
-
- ![](./images/reboot.PNG)
+https://docs.microsoft.com/en-us/learn/modules/deploy-prebuilt-module-edge-device/6-exercise-deploying-prebuilt-module
 
 
-IoT device client will get the message and report the status to the device twin.
-
- ![](./images/devicetwinmessage.PNG)
-
-## 3.3.3 Firmware Update (Modified SDK samples/Custom made application):
-
-If the Client components are custom made please add the steps to execute the Firmware Update through Device Twin.
-
-**Note**: Client Components must be shipped with the device 
-
-## 3.3.4 Reboot (Modified SDK samples/Custom made application):
-
-If the Client components are custom made please add the steps to execute the Device Reboot through Direct Methods
-
-**Note**: Client Components must be shipped with the device 
-
-<a name="NextSteps"></a>
-# Step 4: Next steps
-
-Once you shared the documents with us, we will contact you in the following 48 to 72 business hours with next steps.
-
-<a name="Step-5-Troubleshooting"></a>
-# Step 5: Troubleshooting
 
 Please contact engineering support on **<mailto:iotcert@microsoft.com>** for help with troubleshooting.
 
