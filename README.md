@@ -39,12 +39,9 @@ This document describes how to connect Hivecell One device running Ubuntu 18.04 
 
 You should have the following items ready before beginning the process:
 
--   [Setup your IoThub](https://account.windowsazure.com/signup)
--   [Provision your device and get its credentials][lnk-manage-iot-hub]
--   [Sign up to IOT Hub](https://account.windowsazure.com/signup?offer=ms-azr-0044p)
--   [Add the Edge Device](https://docs.microsoft.com/en-us/azure/iot-edge/quickstart-linux)
--   [Add the Edge Modules](https://docs.microsoft.com/en-us/azure/iot-edge/quickstart-linux#deploy-a-module)
--   [Internet connectivity via LAN (ethernet cable)]
+-   [Setup your IoThub](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-create-through-portal)
+-   [Provision your device and get its credentials][https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-create-through-portal]
+-   Internet connectivity via LAN (ethernet cable)
 
 <a name="PrepareDevice"></a>
 # Step 2: Prepare your Device
@@ -102,3 +99,5 @@ https://docs.microsoft.com/en-us/learn/modules/deploy-prebuilt-module-edge-devic
 
 <a name=#Additional></a>
 # Additional items
+
+Additional help, support and consultations can be received by mailing on inquiry@hivecell.com or by using contact us form on our website - hivecell.com
