@@ -8,7 +8,7 @@ device: Hivecell One
 
 ---
 
-Run a simple Java sample on Hivecell One device running Ubuntu 18.04.
+Run a simple Azure IoT esdge module on Hivecell One device running Ubuntu 18.04.
 ===
 ---
 
