@@ -74,11 +74,12 @@ The following components come pre-installed or at the point of distribution on t
 Open the command prompt on your Hivecell One device, confirm that the Azure IoT edge Daemon is under running state
 
     systemctl status iotedge
-
+![](./media/iotedge_status.png)
  
 Open the command prompt on your IoT Edge device, confirm that the module deployed from the cloud is running on your IoT Edge device
 
     sudo iotedge list
+![](./media/iotedge_list.png)
 
 <a name="Connectingtocloud"></a>
 # Step 4: Connecting device with the cloud
@@ -89,6 +90,9 @@ https://docs.microsoft.com/en-us/azure/iot-edge/how-to-install-iot-edge-linux
 
 After instruction execution you should be able to see connected devices in your Azure Iot Hub. 
 Picture you see should be similar to:
+
+![](./media/azure-iot device.png)
+
 
 <a name="Step5Deployment"></a>
 # Step 5: Deploying pre-build module
