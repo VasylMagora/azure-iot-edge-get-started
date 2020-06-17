@@ -40,19 +40,21 @@ This document describes how to connect Hivecell One device running Ubuntu 18.04 
 
 You should have the following items ready before beginning the process:
 
--   [Prepare your development environment][setup-devbox-linux]
--   [Setup your IoT hub](https://account.windowsazure.com/signup?offer=ms-azr-0044p)
+-   [Setup your IoThub](https://account.windowsazure.com/signup)
 -   [Provision your device and get its credentials][lnk-manage-iot-hub]
 -   [Sign up to IOT Hub](https://account.windowsazure.com/signup?offer=ms-azr-0044p)
 -   [Add the Edge Device](https://docs.microsoft.com/en-us/azure/iot-edge/quickstart-linux)
 -   [Add the Edge Modules](https://docs.microsoft.com/en-us/azure/iot-edge/quickstart-linux#deploy-a-module)
 -   {enter your device name here} device.
--   {{Please specify if any other software(s) or hardware(s) are required.}}
 
 <a name="PrepareDevice"></a>
 # Step 2: Prepare your Device
 
--   {{Write down the instructions required to setup, configure and connect your device. Please use external links when possible pointing to your own page with device preparation steps.}}
+- Unpack device from the box on receival
+- Attach ethernet cable and power cable on the back pancel.  You can check how it is done on the following video:
+(https://www.youtube.com/watch?v=KbPPrv7RZS0)
+- Power on the device as per video above
+- Once it is loaded you are able to connect to it via the ssh. Credentials for initial ssh connect are provided in the box, device was shipped in.
 
 <a name="Manual"></a>
 # Step 3: Manual Test for Azure IoT Edge on device
@@ -77,6 +79,7 @@ Open the command prompt on your Hivecell One device, confirm that the Azure IoT 
 
     systemctl status iotedge
 
+ 
  ![]()
 
 Open the command prompt on your IoT Edge device, confirm that the module deployed from the cloud is running on your IoT Edge device
