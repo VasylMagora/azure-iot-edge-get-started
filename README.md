@@ -6,8 +6,6 @@ platform: Ubuntu 18.04
 
 device: Hivecell One
 
-language: Java 
-
 ---
 
 Run a simple Java sample on Hivecell One device running Ubuntu 18.04.
@@ -85,7 +83,7 @@ Open the command prompt on your IoT Edge device, confirm that the module deploye
 
     sudo iotedge list
  
-
+<a name=#Connecting-to-cloud></a>
 # Step 4: Connecting device with the cloud
 
 During Iot Device creation in Azure IoT Hub  you were provided with Primary connection string. Copy it to the clipboard and execute instruction, step "Configure the security daemon: Option 1: Manual Provisioning"
@@ -95,17 +93,12 @@ https://docs.microsoft.com/en-us/azure/iot-edge/how-to-install-iot-edge-linux
 After instruction execution you should be able to see connected devices in your Azure Iot Hub. 
 Picture you see should be similar to:
 
-
+<a name=#Step-5-Deployment></a>
 # Step 5: Deploying pre-build module
 
 Using instruction below deploy pre-build module that simulates temperature sensor:
 
 https://docs.microsoft.com/en-us/learn/modules/deploy-prebuilt-module-edge-device/6-exercise-deploying-prebuilt-module
 
-
-
-Please contact engineering support on **<mailto:iotcert@microsoft.com>** for help with troubleshooting.
-
-[setup-devbox-linux]: https://github.com/Azure/azure-iot-sdk-c/blob/master/doc/devbox_setup.md
-[lnk-setup-iot-hub]: ../setup_iothub.md
-[lnk-manage-iot-hub]: ../manage_iot_hub.md
+<a name=#Additional></a>
+# Additional items
