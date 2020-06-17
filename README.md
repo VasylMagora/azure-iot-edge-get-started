@@ -91,7 +91,7 @@ https://docs.microsoft.com/en-us/azure/iot-edge/how-to-install-iot-edge-linux
 After instruction execution you should be able to see connected devices in your Azure Iot Hub. 
 Picture you see should be similar to:
 
-![](./media/azure-iot device.png)
+![](./media/azure-iot-device.png)
 
 
 <a name="Step5Deployment"></a>
