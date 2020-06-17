@@ -1,5 +1,5 @@
 # azure-iot-edge-get-started
-Initial guide to start simple test application on Hivecell One, connected with Azure IoT Edge
+Initial guide to starting simple test application on Hivecell One, connected with Azure IoT Edge
 
 ---
 platform: Ubuntu 18.04
@@ -8,7 +8,7 @@ device: Hivecell One
 
 ---
 
-Run a simple Azure IoT esdge module on Hivecell One device running Ubuntu 18.04.
+Run a simple Azure IoT edge module on Hivecell One device running Ubuntu 18.04.
 ===
 ---
 
@@ -27,12 +27,12 @@ Run a simple Azure IoT esdge module on Hivecell One device running Ubuntu 18.04.
 
 **About this document**
 
-This document describes how to connect Hivecell One device running Ubuntu 18.04 with Azure IoT Edge Runtime and Device Management and run simple package from Azure Marketplace. This multi-step process includes:
+This document describes how to connect Hivecell One device running Ubuntu 18.04 with Azure IoT Edge Runtime and Device Management and run a simple package from Azure Marketplace. This multi-step process includes:
 
 -   Configuring Azure IoT Hub
 -   Deploying Azure IoT Runtime on device
 -   Registering your IoT device
--   Deploing client component to test device management capability 
+-   Deploying client component to test device management capability
 
 <a name="Prerequisites"></a>
 # Step 1: Prerequisites
@@ -47,10 +47,10 @@ You should have the following items ready before beginning the process:
 # Step 2: Prepare your Device
 
 - Unpack device from the box on receival
-- Attach ethernet cable and power cable on the back pancel.  You can check how it is done on the following video:
+- Attach ethernet cable and power cable on the back panel.  You can check how it is done on the following video:
 (https://www.youtube.com/watch?v=KbPPrv7RZS0)
-- Power on the device as per video above
-- Once it is loaded you are able to connect to it via the ssh. Credentials for initial ssh connect are provided in the box, device was shipped in.
+- Power on the device as per the video above
+- Once it is loaded you are able to connect to it via the ssh. Credentials for initial ssh connect are provided in the box, the device was shipped in.
 
 <a name="Manual"></a>
 # Step 3: Manual Test for Azure IoT Edge on device
@@ -60,7 +60,7 @@ You should have the following items ready before beginning the process:
 
 **Details of the requirement:**
 
-The following components come pre-installed or at the point of distribution on the device to customer(s):
+The following components come pre-installed or at the point of distribution on the device to the customer (s):
 
 -   Azure IoT Edge Security Daemon
 -   Daemon configuration file
@@ -82,20 +82,20 @@ Open the command prompt on your IoT Edge device, confirm that the module deploye
 ![](./media/iotedge_list.png)
 
 <a name="Connectingtocloud"></a>
-# Step 4: Connecting device with the cloud
+# Step 4: Connecting the device with the cloud
 
-During Iot Device creation in Azure IoT Hub  you were provided with Primary connection string. Copy it to the clipboard and execute instruction, step "Configure the security daemon: Option 1: Manual Provisioning"
+During IoT Device creation in Azure IoT Hub  you were provided with Primary connection string. Copy it to the clipboard and execute the instruction, step "Configure the security daemon: Option 1: Manual Provisioning"
 
 https://docs.microsoft.com/en-us/azure/iot-edge/how-to-install-iot-edge-linux
 
-After instruction execution you should be able to see connected devices in your Azure Iot Hub. 
-Picture you see should be similar to:
+After instruction execution, you should be able to see connected devices in your Azure IoT Hub. 
+The picture you see should be similar to:
 
 ![](./media/azure-iot-device.png)
 
 
 <a name="Step5Deployment"></a>
-# Step 5: Deploying pre-build module
+# Step 5: Deploying the pre-build module
 
 Using instruction below deploy pre-build module that simulates temperature sensor:
 
@@ -104,4 +104,4 @@ https://docs.microsoft.com/en-us/learn/modules/deploy-prebuilt-module-edge-devic
 <a name="Additional"></a>
 # Additional items
 
-Additional help, support and consultations can be received by mailing on inquiry@hivecell.com or by using contact us form on our website - hivecell.com
+Additional help, support, and consultations can be received by emailing on inquiry@hivecell.com or by using contact us form on our website - hivecell.com
