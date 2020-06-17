@@ -18,8 +18,8 @@ Run a simple Azure IoT esdge module on Hivecell One device running Ubuntu 18.04.
 -   [Step 1: Prerequisites](#Prerequisites)
 -   [Step 2: Prepare your Device](#PrepareDevice)
 -   [Step 3: Manual Test for Azure IoT Edge on device](#Manual)
--   [Step 4: Connecting device with the cloud](#Connecting-to-cloud)
--   [Step 5: Deploying pre-build module](#Step-5-Deployment)
+-   [Step 4: Connecting device with the cloud](#Connectingtocloud)
+-   [Step 5: Deploying pre-build module](#Step5Deployment)
 -   [Additional items](#Additional)
 
 <a name="Introduction"></a>
@@ -79,8 +79,8 @@ Open the command prompt on your Hivecell One device, confirm that the Azure IoT 
 Open the command prompt on your IoT Edge device, confirm that the module deployed from the cloud is running on your IoT Edge device
 
     sudo iotedge list
- 
-<a name=#Connecting-to-cloud></a>
+
+<a name="Connectingtocloud"></a>
 # Step 4: Connecting device with the cloud
 
 During Iot Device creation in Azure IoT Hub  you were provided with Primary connection string. Copy it to the clipboard and execute instruction, step "Configure the security daemon: Option 1: Manual Provisioning"
@@ -90,14 +90,14 @@ https://docs.microsoft.com/en-us/azure/iot-edge/how-to-install-iot-edge-linux
 After instruction execution you should be able to see connected devices in your Azure Iot Hub. 
 Picture you see should be similar to:
 
-<a name=#Step-5-Deployment></a>
+<a name="Step5Deployment"></a>
 # Step 5: Deploying pre-build module
 
 Using instruction below deploy pre-build module that simulates temperature sensor:
 
 https://docs.microsoft.com/en-us/learn/modules/deploy-prebuilt-module-edge-device/6-exercise-deploying-prebuilt-module
 
-<a name=#Additional></a>
+<a name="Additional"></a>
 # Additional items
 
 Additional help, support and consultations can be received by mailing on inquiry@hivecell.com or by using contact us form on our website - hivecell.com
